@@ -205,11 +205,16 @@ header {
 }
 
 .tiktok {
-  background: linear-gradient(135deg, #ff6a00, #ff9a00);
-  color: white;
-  border-radius: 10px;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(255,106,0,0.3);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #00f0ff;
+  }
+  to {
+    box-shadow: 0 0 20px #00f0ff, 0 0 30px #0088ff;
+  }
 }
 
 /* HOVER */
