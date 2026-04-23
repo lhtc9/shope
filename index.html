@@ -545,49 +545,31 @@ btn.onclick = function () {
 
 <script>
 tsParticles.load("particles-js", {
-  interactivity: {
-  events: {
-    onHover: {
-      enable: true,
-      mode: "grab"
-    }
-  },
-  modes: {
-    grab: {
-      distance: 140,
-      links: {
-        opacity: 1
-      }
-    }
-  }
-}
-
-   background: {
+  background: {
     color: "transparent"
   },
   particles: {
     number: {
-      value: 70 // tăng số lượng
+      value: 35
     },
     color: {
-      value: "#ff6a00"
+      value: "#ff6a00" // màu cam giống web ông
     },
     links: {
       enable: true,
       color: "#ff6a00",
-      distance: 150, // nối xa hơn
-      opacity: 0.5,  // đậm hơn
-      width: 1.2
+      distance: 120,
+      opacity: 0.3
     },
     move: {
       enable: true,
-      speed: 1.5 // nhanh hơn chút
+      speed: 1
     },
     size: {
-      value: 3 // hạt to hơn
+      value: 2
     },
     opacity: {
-      value: 0.8 // rõ hơn
+      value: 0.6
     }
   }
 });
