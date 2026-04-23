@@ -380,6 +380,15 @@ header {
   }
 }
 
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* nằm dưới nội dung */
+  pointer-events: none; /* không chặn bấm */
+}
 </style>
 
 </head>
@@ -593,7 +602,24 @@ btn.onclick = function () {
 
 setTimeout(() => {
     document.getElementById("intro").style.display = "none";
-  }, 2000);
+  }, 1000);
+
+src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"
+
+<div id="particles-js"></div>
+
+tsParticles.load("particles-js", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#00f0ff" },
+    links: {
+      enable: true,
+      color: "#00f0ff"
+    },
+    move: { enable: true }
+  }
+});
 </script>
+<div id="particles-js"></div>
 </body>
 </html>
